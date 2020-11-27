@@ -148,7 +148,7 @@ header .textos h1 {
    min-width: 120px;
    min-height: 150px;
    height: 100%;
-   max-height: 120px;
+   max-height: 100%;
    object-fit: fill ;
 }
 .grid :first-child {
@@ -162,7 +162,10 @@ header .textos h1 {
       transition: 1s ease;
    }
    
-   /* .grid :first-child {
-      grid-row: 1/2;
-   } */
+   .grid img {
+      min-height: 150px;
+      height: 100%;
+      max-height: 100px;
+     
+   }
 }
