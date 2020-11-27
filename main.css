@@ -168,4 +168,7 @@ header .textos h1 {
       max-height: 100px;
      
    }
+   .grid :first-child {
+      max-height: auto;
+   }
 }
