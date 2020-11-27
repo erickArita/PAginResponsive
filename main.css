@@ -5,11 +5,12 @@ body {
 
 header {
    background-image: url(assets/Great-Restaurant-Wallpaper.jpg);
-    height: 100vh;
-    width: 100vw;
-   background-size: cover;
-   background-position: bottom;
+   height: 100vh;
+   width: 100vw;
+   background-size: inherit;
+   background-position: center;
    background-attachment: fixed;
+
    overflow: hidden;
 }
 
@@ -133,18 +134,19 @@ header .textos h1 {
 }
 
 /* menu */
- 
+
 .menu .grid {
    display: grid;
    grid-template-columns: repeat(3, minmax(150px, 1fr));
-   grid-template-rows: repeat(2, minmax(200px, 200px));
+   grid-template-rows: repeat(2, minmax(200px, 1fr));
    grid-gap: 5px;
    margin: 10px;
 }
 .grid img {
    width: 100%;
-   min-height: 200px;
-   height: auto;
+   min-width: 120px;
+   min-height: 150px;
+   height: 100%;
    object-fit: cover;
 }
 .grid :first-child {
